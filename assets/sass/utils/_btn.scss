@@ -1,0 +1,45 @@
+%btn {
+  all: unset;
+  padding: 0.7em 2em;
+  font-weight: 600;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+.green-btn {
+  @extend %btn;
+  color: #fff;
+  background-color: $primary-color;
+  transition: opacity 0.3s ease-in;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.white-btn {
+  @extend %btn;
+  background-color: #fff;
+  color: $primary-color;
+  transition: opacity 0.3s ease-in;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.outline-green-btn {
+  @extend %btn;
+  color: #fff;
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    background-color: $primary-color;
+    color: #fff;
+  }
+}

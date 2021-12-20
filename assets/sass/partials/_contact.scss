@@ -1,0 +1,51 @@
+section#contact {
+  padding: 5rem 0;
+
+  h2.title {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 30px;
+    color: $dark-color;
+    text-align: center;
+  }
+
+  p {
+    color: $grey-color;
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  .main {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2rem;
+
+      .row {
+        width: 100%;
+        display: flex;
+        gap: 2rem;
+
+        input,
+        textarea {
+          width: 100%;
+          padding: 1em 1.8em;
+          border: 1px solid #ced4da;
+          border-radius: 5px;
+          font-size: 1rem;
+          outline: none;
+
+          &:focus {
+            border-color: $primary-color;
+            background-color: rgba($color: $primary-color, $alpha: 0.1);
+          }
+        }
+      }
+    }
+  }
+}
